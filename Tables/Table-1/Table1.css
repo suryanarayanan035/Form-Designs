@@ -16,10 +16,10 @@ tr:nth-child(odd)
 }
 tr:nth-child(even)
 {
-    background-color: yellow;
+    background-color: rgb(111, 245, 111);
 }
 tr:hover
 {
-    background-color: red;
+    background-color:red;
     color:white;
 }
