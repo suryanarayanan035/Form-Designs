@@ -3,17 +3,47 @@
     <head>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="Login1.css">
+            
     </head>
     <body>
         <div id="container">
             <h2>Login Form-1</h2>
             <form id="login1">
                 <label for="username"><i class="fa fa-user-circle-o"></i>Username:</label><br>
-                <input type="text" id="username" /><br><br>
+                <input type="text" id="username" onfocus="show()" onblur="hide()"/><br>
+                    <div id="userInstruction">Use atleast 8 Characters.<br>One Capital letter and Small lettter<br> One numericalCharacter</div>
+                <br>
                 <label for="password"><i class="fa fa-lock"></i>Password:</label><br>
-                <input type="password" id="password" /><br><br>
+                <input type="password" id="password" onfocus="showPass()" onblur="hidePass()"/><br>
+                <div id="passwordInstruction">Use atleast 8 Characters.<br>One Capital letter and Small lettter<br> One numericalCharacter<br>One special character</div><br>
                 <button id="login">Log in&nbsp;<i class="fa fa-key"></i></button>
             </form>
         </div>
     </body>
+    <script src="jquery.js"></script>
+    <script>
+     $(document).ready(function()
+     {
+        $("#userInstruction").fadeOut();
+        $("#passwordInstruction").fadeOut();
+     });
+        function show()
+        {
+            
+            $("#userInstruction").fadeIn(500);
+        }
+        function hide()
+        {
+            $("#userInstruction").fadeOut(500);
+        }
+        function showPass()
+        {
+            
+            $("#passwordInstruction").fadeIn(500);
+        }
+        function hidePass()
+        {
+            $("#passwordInstruction").fadeOut(500);
+        }
+    </script>
     </html>
