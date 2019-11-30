@@ -20,5 +20,6 @@ tr:nth-child(even)
 }
 tr:hover
 {
-    background-color: blue;
+    background-color: red;
+    color:white;
 }
