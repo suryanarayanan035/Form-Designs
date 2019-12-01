@@ -2,6 +2,7 @@ $(document).ready(function()
 {
    $("#userInstruction").hide();
    $("#passwordInstruction").hide();
+   $("#contents").hide();
 
    $("#username").focus(function()
    {
@@ -21,4 +22,11 @@ $(document).ready(function()
    {
        $("#passwordInstruction").slideUp(500);
    });
+   $("#links").hover(menuSlideDown,menuSlideUp);
+   function menuSlideDown(){
+       $("#contents").slideDown(500);
+   }
+   function menuSlideUp(){
+    $("#contents").slideUp(500);
+}
 });
