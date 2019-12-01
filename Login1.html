@@ -6,44 +6,23 @@
             
     </head>
     <body>
+        <div id="banner">
+        <h2 >Login Form 1</h2>
+    </div>
         <div id="container">
             <h2>Login Form-1</h2>
             <form id="login1">
                 <label for="username"><i class="fa fa-user-circle-o"></i>Username:</label><br>
-                <input type="text" id="username" onfocus="show()" onblur="hide()"/><br>
+                <input type="text" id="username" /><br>
                     <div id="userInstruction">Use atleast 8 Characters.<br>One Capital letter and Small lettter<br> One numericalCharacter</div>
                 <br>
                 <label for="password"><i class="fa fa-lock"></i>Password:</label><br>
-                <input type="password" id="password" onfocus="showPass()" onblur="hidePass()"/><br>
+                <input type="password" id="password" /><br>
                 <div id="passwordInstruction">Use atleast 8 Characters.<br>One Capital letter and Small lettter<br> One numericalCharacter<br>One special character</div><br>
                 <button id="login">Log in&nbsp;<i class="fa fa-key"></i></button>
             </form>
         </div>
     </body>
     <script src="jquery.js"></script>
-    <script>
-     $(document).ready(function()
-     {
-        $("#userInstruction").fadeOut();
-        $("#passwordInstruction").fadeOut();
-     });
-        function show()
-        {
-            
-            $("#userInstruction").fadeIn(500);
-        }
-        function hide()
-        {
-            $("#userInstruction").fadeOut(500);
-        }
-        function showPass()
-        {
-            
-            $("#passwordInstruction").fadeIn(500);
-        }
-        function hidePass()
-        {
-            $("#passwordInstruction").fadeOut(500);
-        }
-    </script>
+    <script src="Login1.js"></script>
     </html>

@@ -1,6 +1,24 @@
-<script src="Javascript/jquery.js"></script>
-function showUserins()
+$(document).ready(function()
 {
-    document.getElementById("#userInstruction").style.visibility=visible;
+   $("#userInstruction").hide();
+   $("#passwordInstruction").hide();
 
-}
+   $("#username").focus(function()
+   {
+       
+       $("#userInstruction").slideDown(500);
+   });
+   $("#username").blur(function()
+   {
+       $("#userInstruction").slideUp(500);
+   });
+   $("#password").focus(function()
+   {
+       
+       $("#passwordInstruction").slideDown(500);
+   });
+   $("#password").blur(function()
+   {
+       $("#passwordInstruction").slideUp(500);
+   });
+});
