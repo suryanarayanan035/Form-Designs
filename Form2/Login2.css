@@ -1,0 +1,83 @@
+body
+{
+    background-image: url("lubo-minar-9QI8-MiD8Wg-unsplash.jpg");
+    background-size: cover;
+}
+#avatar
+{
+    font-size:80px;
+    text-align: center;
+    color:grey;
+}
+#container
+{
+    position: relative;
+    color:white;
+    top:150px;
+    height:500px;
+    width:350px;
+    background-color: black;
+    opacity:0.5;
+    left:600px;
+
+}
+form
+{
+    text-align:center;
+}
+input[type="text"]
+{
+    position: relative;
+    width:300px;
+    color:skyblue;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px white;
+    border-style: solid;
+    top:90px;
+}
+input[type="password"]
+{
+    position: relative;
+    width:300px;
+    font-size: 16px;
+    color:skyblue;
+    border:0;
+    background:transparent;
+    outline:0;
+    border-bottom: 1px white;
+    border-style: solid;
+    top:125px;
+}
+#ulabel{
+    position:relative;
+    top:70px;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    right:90px;
+}
+#plabel{
+    position:relative;
+    top:100px;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    right:90px;
+}
+input[type=submit]
+{
+    position: relative;
+    top:150px;
+    width:100px;
+    height:50px;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+}
+input[type=submit]:hover{
+    background-color: rgb(81, 245, 81);
+    opacity:1;
+}
